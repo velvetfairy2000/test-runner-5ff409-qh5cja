@@ -1,0 +1,10 @@
+
+name: Runner Test
+on:
+  pull_request:
+    types: [opened]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Integration test run success"
